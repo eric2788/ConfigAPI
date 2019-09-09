@@ -1,5 +1,6 @@
 package com.ericlam.test.config.implement;
 
+import com.ericlam.test.config.api.Component;
 import com.ericlam.test.config.api.Configuration;
 import com.ericlam.test.config.api.Inject;
 import com.ericlam.test.config.api.Resource;
@@ -19,5 +20,8 @@ public class TestConfig implements Configuration {
     @Inject private String version;
     @Inject private int number;
     @Inject private List<String> authors;
-    @Inject(path = "server") private Map<String, String> servers;
+    @Inject
+    private Server server;
+    @Inject
+    private Map<String, @Component Server> servers;
 }

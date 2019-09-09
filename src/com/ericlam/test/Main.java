@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         ConfigManager manager = ConfigAPI.init().register("test.yml", TestConfig.class).dump();
         TestConfig config = manager.getConfigAs("test.yml", TestConfig.class);
-        System.out.println(config.toString());
+        System.out.println(config.getServers().get("hypixel").getIp());
+
     }
 }

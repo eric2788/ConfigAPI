@@ -4,7 +4,19 @@ number: 999
 authors:
   - Hydranapse_
   - EricLam
+  - EricLamAlso
+
 server:
   name: hypernitemc
   version: 1.14.4
-  ip: mc.hypernite.com
+  ip: hp-mg.hypernite.com
+
+servers:
+  hnmc:
+    name: hypernitemc
+    version: 1.14.4
+    ip: test.hypernite.com
+  hypixel:
+    name: hypixel
+    version: '1.8 - 1.14.4'
+    ip: mc.hypixel.net
