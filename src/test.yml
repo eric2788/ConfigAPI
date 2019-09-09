@@ -1,0 +1,10 @@
+name: "just a test"
+version: 0.0.1
+number: 999
+authors:
+  - Hydranapse_
+  - EricLam
+server:
+  name: hypernitemc
+  version: 1.14.4
+  ip: mc.hypernite.com
